@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">			
+	<title>Robô da Alegria</title>
+
+	<!-- Bootsrap CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap_3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/bootstrap_3.3.6/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="assets/css/interface.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-xs-4 div-camera">
+				<div class="page-header">
+		        	<h5>Monitoramento de vídeo</h5>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12">
+		      			<div class="container-video"></div>
+		      		</div>
+		      		<div class="col-lg-12 text-center">
+		      			<button class="btn btn-info">Start</button>
+		      			<button class="btn btn-info">Stop</button>
+		      		</div>
+		      	</div>
+			</div>
+
+			<div class="col-lg-8 col-xs-8 div-faces">
+				<div class="page-header">
+		        	<h5>Expressões do rosto</h5>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_01.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_02.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_03.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_04.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_05.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_06.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-3 col-xs-4 btn-face">
+		      			<button class="button"><img src="assets/images/faces/face_07.jpg"></button>
+		      		</div>
+		      	</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-xs-4 div-camera">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+				        	<h5>Monitoramento de áudio</h5>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-lg-12">
+				      			<h5>Input - Robô da Alegria</h5>
+				      			<div class="container-audio">
+				      				<audio controls="controls">
+									    <source src="birds.mp3" type="audio/mpeg">
+									    <source src="birds.ogg" type="audio/ogg">
+									    Your browser does not support the HTML5 Audio element.
+									</audio>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-lg-12">
+				      			<h5>Output - Robô da Alegria</h5>
+				      			<button class="btn ">Gravar</button>
+				      			<button class="btn btn-success">Salvar</button>
+				      			<button class="btn btn-info">Enviar</button>
+				      		</div>
+				      	</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-xs-4 div-faces">
+				<div class="page-header">
+		        	<h5>Expressões dos braços</h5>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-6 col-sm-6 btn-face">
+		      			<button class="button"><img src="assets/images/arms/arm_01.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-6 col-sm-6 btn-face">
+		      			<button class="button"><img src="assets/images/arms/arm_02.jpg"></button>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-6 col-sm-6 btn-face">
+		      			<button class="button"><img src="assets/images/arms/arm_03.jpg"></button>
+		      		</div>
+		      		<div class="col-lg-6 col-sm-6 btn-face">
+		      			<button class="button"><img src="assets/images/arms/arm_04.jpg"></button>
+		      		</div>
+		      	</div>
+			</div>
+			<div class="col-lg-4 col-xs-4 div-faces"></div>
+		</div>
+
+	</div>
+
+	<script src="assets/vendor/jquery/jquery_1.11.3.min.js"></script>
+	<script src="assets/vendor/bootstrap_3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
