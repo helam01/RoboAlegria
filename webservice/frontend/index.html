@@ -116,6 +116,8 @@
 	<script src="assets/vendor/jquery/jquery_1.11.3.min.js"></script>
 	<script src="assets/vendor/bootstrap_3.3.6/js/bootstrap.min.js"></script>
 	<script>
+		var endpoint = "http://127.0.0.1:8000/api/send";
+
 		$(function(){
 			$(".btn").click(function(){
 				var cod = $(this).attr("data-cod");
@@ -132,7 +134,13 @@
 
 		function sendCod(cod)
 		{
-			console.log(cod);
+			$.ajax({
+				url : endpoint,
+				data : {cod : cod},
+				success : function(response){
+					console.log(response);
+				}
+			});
 		}
 	</script>
 </body>
