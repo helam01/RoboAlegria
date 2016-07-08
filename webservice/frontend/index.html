@@ -34,25 +34,25 @@
 		      	</div>
 		      	<div class="row">
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="1"><img src="assets/images/faces/face01.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="1"><img src="assets/images/faces/face01.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="2"><img src="assets/images/faces/face02.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="2"><img src="assets/images/faces/face02.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="3"><img src="assets/images/faces/face03.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="3"><img src="assets/images/faces/face03.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="4"><img src="assets/images/faces/face04.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="4"><img src="assets/images/faces/face04.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="5"><img src="assets/images/faces/face05.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="5"><img src="assets/images/faces/face05.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="6"><img src="assets/images/faces/face06.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="6"><img src="assets/images/faces/face06.png"></button>
 		      		</div>
 		      		<div class="col-lg-3 col-xs-6 btn-face">
-		      			<button class="btn btn-default" data-cod="7"><img src="assets/images/faces/face07.png"></button>
+		      			<button class="btnFace btn btn-default" data-cod="7"><img src="assets/images/faces/face07.png"></button>
 		      		</div>
 		      	</div>
 			</div>
@@ -95,16 +95,16 @@
 		      	</div>
 		      	<div class="row">
 		      		<div class="col-xs-3 btn-face text-center">
-		      			<button class="btn btn-default" data-cod="A"><img src="assets/images/arms/arm01.png"></button>
+		      			<button class="btnArm btn btn-default" data-cod="A"><img src="assets/images/arms/arm01.png"></button>
 		      		</div>
 		      		<div class="col-xs-3 btn-face text-center">
-		      			<button class="btn btn-default" data-cod="B"><img src="assets/images/arms/arm02.png"></button>
+		      			<button class="btnArm btn btn-default" data-cod="B"><img src="assets/images/arms/arm02.png"></button>
 		      		</div>
 		      		<div class="col-xs-3 btn-face text-center">
-		      			<button class="btn btn-default" data-cod="C"><img src="assets/images/arms/arm03.png"></button>
+		      			<button class="btnArm btn btn-default" data-cod="C"><img src="assets/images/arms/arm03.png"></button>
 		      		</div>
 		      		<div class="col-xs-3 btn-face text-center">
-		      			<button class="btn btn-default" data-cod="D"><img src="assets/images/arms/arm04.png"></button>
+		      			<button class="btnArm btn btn-default" data-cod="D"><img src="assets/images/arms/arm04.png"></button>
 		      		</div>
 		      	</div>
 			</div>
@@ -119,16 +119,26 @@
 		var endpoint = "http://127.0.0.1:8000/api/send";
 
 		$(function(){
-			$(".btn").click(function(){
+			$(".btnFace").click(function(){
 				var cod = $(this).attr("data-cod");
 
-				$(".btn").addClass("btn-default");
-				$(".btn").removeClass("btn-primary");
+				$(".btnFace").addClass("btn-default");
+				$(".btnFace").removeClass("btn-primary");
 
 				$(this).addClass("btn-primary");
 
 				sendCod(cod);
+			});
 
+			$(".btnArm").click(function(){
+				var cod = $(this).attr("data-cod");
+
+				$(".btnArm").addClass("btn-default");
+				$(".btnArm").removeClass("btn-primary");
+
+				$(this).addClass("btn-primary");
+
+				sendCod(cod);
 			});
 		});
 
