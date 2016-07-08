@@ -19,11 +19,13 @@
 		      	</div>
 		      	<div class="row">
 		      		<div class="col-lg-12">
-		      			<div class="container-video"></div>
+		      			<div class="container-video">
+		      				<img class="cameraVideo" style="-webkit-user-select: none;" src="" width="360" height="200">
+		      			</div>
 		      		</div>
 		      		<div class="col-lg-12 text-center">
-		      			<button class="btn btn-info">Start</button>
-		      			<button class="btn btn-info">Stop</button>
+		      			<button class="btn btn-info btnStarCamera">Start</button>
+		      			<button class="btn btn-info btnStopCamera">Stop</button>
 		      		</div>
 		      	</div>
 			</div>
@@ -117,6 +119,7 @@
 	<script src="assets/vendor/bootstrap_3.3.6/js/bootstrap.min.js"></script>
 	<script>
 		var endpoint = "http://127.0.0.1:8000/api/send";
+		var camera = "http://192.168.0.16:8080/video";
 
 		$(function(){
 			$(".btnFace").click(function(){
@@ -139,6 +142,13 @@
 				$(this).addClass("btn-primary");
 
 				sendCod(cod);
+			});
+
+			$(".btnStarCamera").click(function(){
+				$(".cameraVideo").attr("src", camera);
+			});
+			$(".btnStopCamera").click(function(){
+				$(".cameraVideo").attr("src", "");
 			});
 		});
 
